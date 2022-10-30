@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Sonnensystem Simulations</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Portfolio</a>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>Sonnensystem Simulation</h1>
+					<p>Die Sonnensystem Simulation basiert auf dem Newton'schen Gravitationsgesetzt.
+						Es wird
+						anhand der aktuellen Geschwindigkeit der Planeten und den Anziehungskräften
+						zu allen anderen Planeten die neue Position errechnet. (In Python geschrieben)</p>
+					</p>
+				</header>
+				<div class="image main"><img src="images/Sonnensystem.jpg" alt="" /></div>
+				<p> Die Simulation des Sonnensystems basiert auf realen Zahlen wie z.B. den Massen und
+					Abständen der Himmelskörper. Mit Hilfe des Newton'schen Gravitationsgesetzes werden
+					so die Kräfte berechnet die zwischen allen Himmelskörpern auftreten. Bricht man diese
+					Kräfte nun, in der zweidimensionalen Ebene, in ihre x- und y-Komponente auf kann man mit
+					den aktuellen Geschwindigkeit die neue Position der Planeten errechnen. Die zurückgelegten
+					Entfernungen werden dann entsprechen auf den Maßstab des Fensters heruntergerechnet und dort
+					angezeigt. Die Größe der Planeten und der Sonne sind lediglich schematisch dargestellt, da
+					hier das Verhältnis nicht sinnvoll darstellbar ist. Weiterhin werden die zurückgelegten
+					Strecken der einzelnen Planeten als Kreisbahnen gezeichnet. Aufgrund der unterschiedlichen
+					Orbitgeschwindigkeiten der Planeten wirken zu unterschiedlichen Zeitpunkten unterschiedliche
+					Kräfte auf die einzelnen Planeten wodurch sich deren Laufbahn leicht verändert. Dies wird durch
+					die Entfernungsangaben zur Sonne dargestellt, welche sich auf den Planeten befinden und mit jedem
+					neu besuchten Punkt neu berechent werden. Der Hintergrund besteht aus zufällig generierten
+					Sternen die sich mit jedem Neustart des Programms ändern. Die Himmelskörper werden durch
+					Bilder der Planeten und der Sonne selbst dargestellt. </p>
+
+				<center>
+					<video width="450" , height="450" , controls>
+
+						<!-- wie kann man das Video nach dem Ende nochmal starten? tut es das automatisch schon?-->
+						<source src="images/Planeten.mp4" type="video/mp4">
+
+					</video>
+				</center>
+			</section>
+
+		</div>
+
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Dominik Isak</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

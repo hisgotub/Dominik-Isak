@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Aktien Screener</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Portfolio</a>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>Aktien Screener</h1>
+					<p> Der Aktien Screener ist ein in Python geschriebenes Programm, welches die
+						500 Unternehmen des S&P500 anhand bestimmter Kriterien filtert. </p>
+				</header>
+				<div class="image main"><img src="images/StockScreenerInput.jpg" alt="" /></div>
+				<p> Die Idee war es anhand verschiedener Kriterien wie z.B. der Größe des Unternehmens
+					(Marktkapitalisierung), dem Kurs-Gewinn-Verhältnis (P/E Ratio) oder der operativen
+					Gewinnmarge, die im S&P500 gelisteten Unternehmen zu filtern und so einen Ausgangspunkt
+					an potenziell "fair" bzw. "unterbewerteten" Unternehmen zu finden.
+					Hierzu wird das yahoo_fin package verwendet welches im Wesentlichen ein bereits implementiertes
+					Scraping-Tool ist und es somit ermöglicht die nötigen Informationen wie die
+					Kurse und Bilanzen der Firmen auszuwerten. Zur übersichtlicheren Bedienung kann man die
+					Filter-Parameter über ein, mit Tkinter implementiertes, User-Interface einstellen.
+					Auf dem oberen Screenshot befindet sich eine Beispielauswahl an Kriterien für die Filterung
+					und der zweite Screenshot zeigt einen Auszug der gefilterten Ergebnisse.
+					"from online" lädt alle Informationen neu von yahoo_fin und speichert diese für jede
+					Aktie in eine CSV Datei. "From Data" liest die Informationen aus diesen CSV Dateien aus
+					und ist somit auch offline lauffähig. Die gefilterten Ergebnisse werden in der Konsole ausgegeben
+					und zusätzlich in einer JSON Datei gespeichert.
+				</p>
+				<div class="image main"><img src="images/StockScreenerOutput.jpg" alt="" /></div>
+			</section>
+
+		</div>
+
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Dominik Isak</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
